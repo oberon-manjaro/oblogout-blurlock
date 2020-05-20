@@ -9,7 +9,7 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 
-import -window root /tmp/screenshot.png
+import -silent -window root /tmp/screenshot.png
 convert /tmp/screenshot.png -blur 0x5 /tmp/screenshotblur.png
 rm /tmp/screenshot.png
 i3lock -i /tmp/screenshotblur.png
